@@ -1,15 +1,19 @@
 ---
 declared-services:
-  my-conversation-service:
+  Car_Dashboard_Current:
     label: conversation
     plan: free
 applications:
-- name: conversation-simple
+- name: webtest1
   command: npm start
   path: .
   memory: 256M
   instances: 1
-  services:
-  - my-conversation-service
+  services: {
+"url": "https://gateway.watsonplatform.net/conversation/api",
+"username": "6e326c9c-1dc5-4f04-9829-b18bba8be95d",
+"password": "TLceaXWQ3bQI"
+}
   env:
     NPM_CONFIG_PRODUCTION: false
+
