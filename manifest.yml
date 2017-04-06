@@ -1,16 +1,23 @@
----
-declared-services:
-  Car_Dashboard_Current:
-    label: conversation
-    plan: free
-applications:
-- name: webtest1
-  command: npm start
-  path: .
-  memory: 256M
-  instances: 1
-  services: Conversation-q5
- env:
-   NPM_CONFIG_PRODUCTION: false
+{
+  "conversation": [
+    {
+      "credentials": {
+        "url": "https://gateway.watsonplatform.net/conversation/api",
+        "username": "84d6625d-d24e-4626-9888-0b09675411fc",
+        "password": "R0AZOfD21rMF"
+      },
+      "syslog_drain_url": null,
+      "label": "conversation",
+      "provider": null,
+      "plan": "free",
+      "name": "Conversation-q5",
+      "tags": [
+        "watson",
+        "ibm_created",
+        "ibm_dedicated_public"
+      ]
+    }
+  ]
+}
 
 
