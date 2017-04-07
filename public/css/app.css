@@ -10,7 +10,7 @@ body {
   padding: 0;
 }
 
-div {
+/*div {
   word-wrap: break-word;
   line-height: 1.25rem;
 }
@@ -41,7 +41,9 @@ div {
 
 #view-change-button.full .full {
   display: inline-block;
-}
+}/*
+
+
 
 #contentParent {
   height: 100%;
